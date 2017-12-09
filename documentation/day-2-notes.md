@@ -137,7 +137,7 @@ See your transaction, if it is mined, and if it has tx's
 
 Call one of the created functions:
 
-## Using Remix
+## Using Remix with Solidity
 
    Good as a debugger for singular contracts and debugging. Not for enterprise development
 
@@ -188,23 +188,40 @@ contract Calculator {
 * Parameters (also return) of functions: memory
 * All other local variables: storage
 
-1. Only complex structure like array and structs can have data location
 
-2. Constant value give in contract is equivalent to memory
+1 Only complex structure like array and structs can have data location
+
+2 Constant value give in contract is equivalent to memory
 * ex [1,2,3,4,5] equivalent to uint8 memory
-* [uint(1), 2,3,4,5] equiv to uint256 memory
+* [uint(1),2,3,4,5] equiv to uint256 memory
 
-3. Array with data location
+3 Array with data location
 * Storage can push
 * memory can not push
 
-4. Storage array can get & set .length
+4 Storage array can get & set .length
 
-5. Memory can only get .length
+5 Memory can only get .length
 
-6. State variables can be storage only
-
+6 State variables can be storage only
 
 ## Truffle Framework
+   When using multiple contracts, truffle is useful for interacting contracts. Use when deployment and testing.
 
-   When using multiple contracts, truffle is useful for interacting contracts. Use when deployment and testing
+
+   Install:
+
+### Install and run TestRPC 
+  * npm install -g ethereumjs-testrpc
+  * testrpc
+  * keep the tab open in background, open new tab
+### Install Truffle
+  * npm install -g truffle
+  * mkdir TruffleTestProject
+  * cd TruffleTestProject
+
+### Load sample project
+  * truffle unbox webpack
+  * truffle compile
+  * truffle migrate
+  * npm run dev

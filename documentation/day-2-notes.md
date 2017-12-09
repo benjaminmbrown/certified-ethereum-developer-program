@@ -179,14 +179,30 @@ contract Calculator {
 * `memory` - space in blockchain / essentially VRAM
 * `calldata` - when you call a function 
 
-* Forced Data Location - you can't change
+
+Forced Data Location - you can't change
   * Parameters (not return) of external functions: calldata
   * State Variables: storage
 
-* Default Data Location
+Default Data Location
   * Parameters (also return) of functions: memory
   * All other local variables: storage
 
+1. Only complex structure like array and structs can have data location
+
+2. Constant value give in contract is equivalent to memory
+  * ex [1,2,3,4,5] equivalent to uint8 memory
+  * [uint(1), 2,3,4,5] equiv to uint256 memory
+
+3. Array with data location
+  * Storage can push
+  * memory can not push
+
+4. Storage array can get & set .length
+
+5. Memory can only get .length
+
+6. State variables can be storage only
 
 
 ## Truffle Framework

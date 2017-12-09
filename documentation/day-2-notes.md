@@ -49,6 +49,10 @@ contract add {
 * `var compileCode = eth.compile.solidity(sourceCode)`
 * output of `compileCode` is now in bytecode hex (code: attribute) which is what the blockchain understands
 
+Example: 
+
+![Compile Code](compile-code.png)
+
 * ABI Definition
   * contract can call another contract or outside world
   * The interface: in order to call, you need to name/address of the contract, function name, and parameters needed
@@ -83,6 +87,8 @@ contract add {
    Before we upload, we need to create an object which has all of the details that blockchain interprets.
 
 `var addContract = eth.contract(compileCode["<std>:add"].info.abiDefinition)`
+
+![Create Object](create-object.png)
 
 ### 4. Create a transaction 
    Need to create a transaction to put on the network:

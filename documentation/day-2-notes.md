@@ -20,9 +20,29 @@
   * Old databases can only be updated one record at a time - if n number of nodes, who gets the right to update the db at any given time?
 
 ## GETH Details
+   Go through geth in detail and understand the fundamentals of how to manually create a smart contract, compile it, and upload to blockchain
 
-   Go through geth in detail and understand
+
+### To create a smart contract
+```pragma solidity ^0.4.0;
+contract add {
+    uint public c;
+    
+    function Add(uint a, uint b){
+        c = a + b;
+    }
+    function returnAdd() constant returns (uint) {
+        return c;
+    }
+}```
+* create sourcecode variable w/ code in string
+* var sourceCode = "{your source}"
+* var compileCode = eth.compile.solidity(sourceCode)
+* output of compilecode is now in bytecode hex (code: attribute) which is what the blockchain understands
+
 * ABI Definition
+  * contract can call another contract or outside world
+  * The interface: in order to call, you need to name/address of the contract, function name, and parameters needed
 
 * compiile object from geth itself
 

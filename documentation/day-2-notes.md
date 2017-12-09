@@ -75,14 +75,34 @@ contract add {
 ]
 ```
 
-![]("https://files.slack.com/files-tmb/T5H07ACCD-F8C9GDFGU-0a6400ed12/screen_shot_2017-12-09_at_11.40.03_am_1024.png")
+![ABI Definition]("ABI-dfinition.png")
 * To call a contract you NEED the ontract address and ABI definition
 
-### 3. Create the contract object & Upload to Ethereum
+### 3. Create the contract object
 
    Before we upload, we need to create an object which has all of the details that blockchain interprets.
 
 `var addContract = eth.contract(compileCode["<std>:add"].info.abiDefinition)`
+
+### 4. Create a transaction 
+   Need to create a transaction to put on the network:
+
+   ```
+   var addTransaction = addContract.new({
+       from: eth.coinbase,
+       data: compileCode["<stdin>:add"].code,
+       value, 0,
+       gas: 1000000
+   },
+   function(err,contract){
+       if(err){
+           console.error(err);
+       } else {
+           console.log(contract);
+           console.log(contract.address);
+       }
+   });
+   ```
 
 ## Using Remix
 

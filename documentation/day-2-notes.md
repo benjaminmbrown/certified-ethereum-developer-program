@@ -99,6 +99,11 @@ contract add {
 ![Create Object](create-object.png)
 
 #### 4. Create a transaction 
+
+FIRST: Must supply your private key to unlock your account before you can send a transaction/upload a contract.
+
+`personal.unlockAccount("0x343143831943189")'
+
    Need to create a transaction to put on the network.
 
 * During a normal transaction, data is optional
@@ -122,6 +127,11 @@ contract add {
    ```
 ![Transaction](transaction.png)
 
+#### Successfully Uploaded Contract with Transaction ID
+
+See your transaction, if it is mined, and if it has tx's
+`eth.getTransaction("your tx ID")`
+* block number = null until it is mined
 
 ## Using Remix
 

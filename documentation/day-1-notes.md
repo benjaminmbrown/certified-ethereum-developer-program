@@ -1,9 +1,9 @@
-#Day 1 Notes
+# Day 1 Notes
 
-##Team
+## Team
 @professormarek
 
-##Front Row
+## Front Row
 Girl (don’t have name ) UBS - blockchain - javascript engineer
 Mohammed - publishing - 
 Neville Brown - faculty - personifying blockchain
@@ -14,7 +14,7 @@ Shawn - MBA at western in london - sold procurement optimization - energy
 
 
 
-##Middle Row - right to left
+## Middle Row - right to left
 Don - Forecast an management - commercializing blockchains for enterprise  finance
 Evan - creative generalist - programming business analytics application - IoT
 Robin - Science background - implementation consultant MS analysis - hyperion , sales & biz dev - commercialization & decentralization
@@ -26,7 +26,7 @@ Blockchain as Notary Service
 Cross - Industry Invoice (BRS)
 “Factom”
 
-###Scenario 1.5 
+### Scenario 1.5 
 Blockchain as “Notary Service”, paired with Message Delivery
 “Content addressable storage”
 Store a Hash to content on the network
@@ -34,8 +34,6 @@ No hard mapping like IP address -> website stored on server
 
 Smart Contract Anatomy 
 * Ethereum/ Solidity
-
-###Scenario 2 
 
 
 ##Applications
@@ -51,7 +49,7 @@ Smart Contract Anatomy
 * priv/pub key pairs
 * priv keys to be guarded - if i have priv key - i am that person
 
-#History / Details
+# History / Details
 * 2009
 * days destroyed = transaction volume
 * turing complete roughtly means it can compute any number that is able to compute
@@ -60,7 +58,7 @@ Smart Contract Anatomy
 * smart contracts cannot initiate themselves, need initiation from external accounts (user accounts / oracles)
 * Oracle = trusted 3rd party . not at center, they are at the 'edge'
 
-##Presentation on Iota Security & deepdefense.net
+## Presentation on Iota Security & deepdefense.net
 * Founded after working in DC think tank, partener with NATO
 * Kenetic and cyber risks of IoT
 * Replace people with Machine Learning to detect threats on mobile devices
@@ -80,16 +78,16 @@ Smart Contract Anatomy
 
 Question: Planning to Pay AI developers?
 
-##Visit
+## Visit
 * Visit by Alex Todd @ Trusted Pay - Social capital
 *  Best Consensus Solidity - Maodularize synchronise - Cross
 * David - public chain 
 
 
-##Wiki
+## Wiki
 mareks-macbook-pro.local
 
-##Process
+## Process
 * Created Private Network w/ custom blockchain ID
 * created a genesis.json to be shared amongst our private network
 * Set our

@@ -19,9 +19,9 @@
   * Incentivizes systems to try to come in sync where before there was no incentive
   * Old databases can only be updated one record at a time - if n number of nodes, who gets the right to update the db at any given time?
 
-## GETH Details
+## Smart Contract creation in GETH 
 
-   Go through geth in detail and understand the fundamentals of how to manually create a smart contract, compile it, and upload to blockchain
+   Go through geth smart contract creation in detail and understand the fundamentals of how to manually create a smart contract, compile it, and upload to blockchain
 
 ### 1. To create a smart contract
 
@@ -74,9 +74,11 @@ contract add {
 {...}
 ]
 ```
-* To call a contract you NEED: Contract address and ABI definition
 
-### Create the contract object & Upload to Ethereum
+![]("https://files.slack.com/files-tmb/T5H07ACCD-F8C9GDFGU-0a6400ed12/screen_shot_2017-12-09_at_11.40.03_am_1024.png")
+* To call a contract you NEED the ontract address and ABI definition
+
+### 3. Create the contract object & Upload to Ethereum
 
    Before we upload, we need to create an object which has all of the details that blockchain interprets.
 

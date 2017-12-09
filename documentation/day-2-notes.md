@@ -65,7 +65,7 @@ contract add {
   * contract can call another contract or outside world
   * The interface: in order to call, you need to name/address of the contract, function name, and parameters needed
 
-* `compileCode["<stdin>add"].info.abiDefinition` returns example object:
+* `compileCode["<stdin>:add"].info.abiDefinition` returns example object:
 ```
 [{
     constant: false,
@@ -99,7 +99,10 @@ contract add {
 ![Create Object](create-object.png)
 
 ### 4. Create a transaction 
-   Need to create a transaction to put on the network:
+   Need to create a transaction to put on the network.
+
+* During a normal transaction, data is optional
+* During contract upload `addContract.new()` , data contains the hex code of the compiled contract code that will be run on Ethereum Virual Machine stack.
 
    ```
    var addTransaction = addContract.new({

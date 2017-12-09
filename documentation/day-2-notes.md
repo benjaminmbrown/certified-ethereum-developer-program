@@ -165,6 +165,30 @@ contract Calculator {
 
    After creating, below the create area will be a small area with your function names . In the `addNumber` input, put in two numbers. To retrieve the results, you have to call the `getResults` function from the same area. It will display the addition.
 
+
+   Note: everything is a state variable. 
+
+   If you just want to temporarily use a variable, create storage variables like:
+   `uint[4] storage localStorage3;`
+   `uint[] memory localMemory1;`
+
+### Default Variables List
+3 parts - `storage`, `memory` and `calldata`
+
+* `storage`- merkle tree in side block data
+* `memory` - space in blockchain / essentially VRAM
+* `calldata` - when you call a function 
+
+* Forced Data Location - you can't change
+  * Parameters (not return) of external functions: calldata
+  * State Variables: storage
+
+* Default Data Location
+  * Parameters (also return) of functions: memory
+  * All other local variables: storage
+
+
+
 ## Truffle Framework
 
    When using multiple contracts, truffle is useful for interacting contracts. Use when deployment and testing

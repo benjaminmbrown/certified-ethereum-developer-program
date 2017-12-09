@@ -1,7 +1,13 @@
 # Day 2
+By Benjamin M. Brown @benjaminmbrown
 
 ## Intro
-  ## Instructor: Neeraj S Srivastava
+#### Instructor: Neeraj S Srivastava
+
+   Today we are exploring creating smart contracts the 'hard way' first, then learning to debug individual contracts with solidity, and finally how we can use truffle for enterprise contract deployment.
+
+Warning: These are my personal notes, so there may be typos throughout. I am just trying to get the technical details of contract code / creation and skipping the side conversations for the most part.
+
 * DLT Labs - Distributed Ledger Technology
 * R3 Corda
 * Truth vs. Consensus

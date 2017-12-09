@@ -25,7 +25,7 @@
 
 ### To create a smart contract
    Contract example:
-   
+
 ```pragma solidity ^0.4.0;
 contract add {
     uint public c;
@@ -46,6 +46,28 @@ contract add {
 * ABI Definition
   * contract can call another contract or outside world
   * The interface: in order to call, you need to name/address of the contract, function name, and parameters needed
+
+* compileCode["<stdin>add"].info.abiDefinition returns example object:
+```
+[{
+    constant: false,
+    inputs: [{
+        name: "a",
+        type: "uint256",
+    },{
+        name: "a",
+        type: "uint256",
+    }
+    ],
+    name: "Add",
+    outputs: [],
+    payable: false,
+    type: "function"
+
+},
+{...}
+]
+```
 
 * compiile object from geth itself
 

@@ -75,7 +75,7 @@ contract add {
 ]
 ```
 
-![ABI Definition]("ABI-dfinition.png")
+![ABI Definition](ABI-dfinition.png)
 * To call a contract you NEED the ontract address and ABI definition
 
 ### 3. Create the contract object

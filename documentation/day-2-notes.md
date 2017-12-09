@@ -1,5 +1,5 @@
 # Day 2
-By Benjamin M. Brown @benjaminmbrown
+By Benjamin M. Brown T: [@benjaminmbrown](http://twitter.com/benjaminmbrown) - G: [@benjaminmbrown](http://github.com/benjaminmbrown)
 
 ## Intro
 #### Instructor: Neeraj S Srivastava

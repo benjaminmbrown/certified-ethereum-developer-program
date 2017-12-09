@@ -120,6 +120,8 @@ contract add {
        }
    });
    ```
+![Transaction](transaction.png)
+
 
 ## Using Remix
 

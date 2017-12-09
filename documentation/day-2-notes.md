@@ -25,13 +25,13 @@ Warning: These are my personal notes, so there may be typos throughout. I am jus
   * Incentivizes systems to try to come in sync where before there was no incentive
   * Old databases can only be updated one record at a time - if n number of nodes, who gets the right to update the db at any given time?
 
-## Smart Contract creation in GETH 
+## Smart Contract Creation and Launch in GETH 
 
    Go through geth smart contract creation in detail and understand the fundamentals of how to manually create a smart contract, compile it, and upload to blockchain
 
-### 1. To create a smart contract
+### 1. Create Contract Source Code
 
-   Contract example:
+   Contract source code example:
 
 ```
 pragma solidity ^0.4.0;
@@ -61,8 +61,7 @@ contract add {
 ![Compile Code](compile-code.png)
 
    ### ABI Definition
-
-        The ABI is separate from the contract code/bytecode. ABI defines the contract name, the functions, and the required parameters within each function. For anyone to be able to call the contract, it needs to know these attributes explicitly. We need to manually build the ABI every time we want to prepare a contract for launching on the network.
+   The ABI is separate from the contract code/bytecode. ABI defines the contract name, the functions, and the required parameters within each function. For anyone to be able to call the contract, it needs to know these attributes explicitly. We need to manually build the ABI every time we want to prepare a contract for launching on the network.
   * contract can call another contract or outside world
   * The interface: in order to call, you need to name/address of the contract, function name, and parameters needed
 

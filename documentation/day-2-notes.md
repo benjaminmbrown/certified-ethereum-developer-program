@@ -49,7 +49,7 @@ contract add {
 * `var compileCode = eth.compile.solidity(sourceCode)`
 * output of `compileCode` is now in bytecode hex (code: attribute) which is what the blockchain understands
 
-(find "<stdin>:add:{ code: "  and the bytecode is there in hex)
+(In this image, find  ` "<stdin>:add:{ code: " ` and the bytecode follows there in hex)
 
 ![Compile Code](compile-code.png)
 

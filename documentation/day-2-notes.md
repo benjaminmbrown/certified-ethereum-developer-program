@@ -52,7 +52,7 @@ contract add {
    We need to convert contract code from higher level languages (C++, Python, Solidity, etc) into code that can run on the blockchain (it is called the bytecode).
  
 * create sourcecode variable w/ code in string
-* `var sourceCode = "{your source}"`
+* `var sourceCode = "pragma solidity ^0.4.0; contract add ..."`
 * `var compileCode = eth.compile.solidity(sourceCode)`
 * output of `compileCode` is now in bytecode hex (code: attribute) which is what the blockchain understands
 

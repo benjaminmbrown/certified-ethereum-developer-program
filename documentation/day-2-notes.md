@@ -24,6 +24,8 @@
 
 
 ### To create a smart contract
+   Contract example:
+   
 ```pragma solidity ^0.4.0;
 contract add {
     uint public c;
@@ -34,7 +36,8 @@ contract add {
     function returnAdd() constant returns (uint) {
         return c;
     }
-}```
+}
+```
 * create sourcecode variable w/ code in string
 * var sourceCode = "{your source}"
 * var compileCode = eth.compile.solidity(sourceCode)

@@ -39,15 +39,15 @@ contract add {
 }
 ```
 * create sourcecode variable w/ code in string
-* var sourceCode = "{your source}"
-* var compileCode = eth.compile.solidity(sourceCode)
+* `var sourceCode = "{your source}"`
+* `var compileCode = eth.compile.solidity(sourceCode)`
 * output of compilecode is now in bytecode hex (code: attribute) which is what the blockchain understands
 
 * ABI Definition
   * contract can call another contract or outside world
   * The interface: in order to call, you need to name/address of the contract, function name, and parameters needed
 
-* compileCode["<stdin>add"].info.abiDefinition returns example object:
+* `compileCode["<stdin>add"].info.abiDefinition` returns example object:
 ```
 [{
     constant: false,
@@ -68,8 +68,7 @@ contract add {
 {...}
 ]
 ```
-
-* compiile object from geth itself
+* To call a contract you NEED: Contract address and ABI definition
 
 ## Using Remix
    Good as a debugger for singular contracts and debugging. Not for enterprise development

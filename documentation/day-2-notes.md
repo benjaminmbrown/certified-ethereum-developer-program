@@ -33,7 +33,8 @@ Warning: These are my personal notes, so there may be typos throughout. I am jus
 
    Contract example:
 
-```pragma solidity ^0.4.0;
+```
+pragma solidity ^0.4.0;
 contract add {
     uint public c;
     
@@ -59,8 +60,9 @@ contract add {
 
 ![Compile Code](compile-code.png)
 
-### ABI Definition
-ABI defines the contract name, the functions, and the required parameters within each function. For anyone to be able to call the contract, it needs to know these attributes explicitly. We need to manually build the ABI every time we want to prepare a contract for launching on the network.
+   ### ABI Definition
+
+        The ABI is separate from the contract code/bytecode. ABI defines the contract name, the functions, and the required parameters within each function. For anyone to be able to call the contract, it needs to know these attributes explicitly. We need to manually build the ABI every time we want to prepare a contract for launching on the network.
   * contract can call another contract or outside world
   * The interface: in order to call, you need to name/address of the contract, function name, and parameters needed
 

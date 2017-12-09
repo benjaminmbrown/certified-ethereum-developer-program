@@ -29,7 +29,7 @@ Warning: These are my personal notes, so there may be typos throughout. I am jus
 
    Go through geth smart contract creation in detail and understand the fundamentals of how to manually create a smart contract, compile it, and upload to blockchain
 
-### 1. Create Contract Source Code
+#### 1. Create Contract Source Code
 
    Contract source code example:
 
@@ -47,7 +47,7 @@ contract add {
 }
 ```
 
-### 2. Compiling the Smart Contract
+#### 2. Compiling the Smart Contract
 
    We need to convert contract code from higher level languages (C++, Python, Solidity, etc) into code that can run on the blockchain (it is called the bytecode).
  
@@ -90,7 +90,7 @@ contract add {
 ![ABI Definition](ABI-definition.png)
 * To call a contract you NEED the ontract address and ABI definition
 
-### 3. Create the contract object
+#### 3. Create the contract object
 
    Before we upload, we need to create an object which has all of the details that blockchain interprets.
 
@@ -98,7 +98,7 @@ contract add {
 
 ![Create Object](create-object.png)
 
-### 4. Create a transaction 
+#### 4. Create a transaction 
    Need to create a transaction to put on the network.
 
 * During a normal transaction, data is optional

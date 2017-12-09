@@ -86,12 +86,13 @@ Question: Planning to Pay AI developers?
 * David - public chain 
 
 
-## Wiki
+##Wiki
 mareks-macbook-pro.local
 
-## Process
+##Process
 * Created Private Network w/ custom blockchain ID
 * created a genesis.json to be shared amongst our private network
+* Set our
 * gasLimit = total limit of gas in an entire block among all participants
 
 * learned geth commands to create accounts, send transactions, set coinbase, send messages with transactions, mining of/on, adding peers

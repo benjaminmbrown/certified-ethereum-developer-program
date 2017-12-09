@@ -2,7 +2,7 @@
 By Benjamin M. Brown T: [@benjaminmbrown](http://twitter.com/benjaminmbrown) - G: [@benjaminmbrown](http://github.com/benjaminmbrown)
 
 ## Intro
-#### Instructor: Neeraj S Srivastava
+## Instructor: Neeraj S Srivastava
 
    Today we are exploring creating smart contracts the 'hard way' first, then learning to debug individual contracts with solidity, and finally how we can use truffle for enterprise contract deployment.
 
@@ -133,11 +133,37 @@ See your transaction, if it is mined, and if it has tx's
 `eth.getTransaction("your tx ID")`
 * block number = null until it is mined
 
+#### How to call a deployed contract
+
+Call one of the created functions:
+
 ## Using Remix
 
    Good as a debugger for singular contracts and debugging. Not for enterprise development
 
 * Shows how Remix works behind the scene
+
+### Our contract
+
+copy/paste in to Remix
+
+```
+pragma solidity ^0.4.0;
+
+contract Calculator {
+    uint addResult;
+    function addNumber (uint n1, uint n2) {
+        addResult = n1 + n2;
+    }
+    function getResults() constant returns (uint) {
+        return addResult;
+    }
+}
+```
+
+   To run the program, you must first create it. On the right side create will create the contract and publish so you can interact.
+
+   After creating, below the create area will be a small area with your function names . In the `addNumber` input, put in two numbers. To retrieve the results, you have to call the `getResults` function from the same area. It will display the addition.
 
 ## Truffle Framework
 

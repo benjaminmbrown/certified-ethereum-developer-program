@@ -252,13 +252,22 @@ Another way to create reusable containers of code.
 ```
 
 if( msg.sender != owner){
-    throw; //drains contract of all gas
+    throw;
 } else {
-    _; //run your code
+    _;
 }
 
 ```
 
-* Throw drains all gas out of contracts
+* `throw` drains all gas out of contracts
 * `_;` basically means to proceed - required to be included in your modifier
+
+## Events
+
+Events are used when you're building decentralized apps with functionality outside of smart contracts. Front end code can listen for these events.
+
+` event Transfer(address indexed _from, address indexed _to, uint256 _valie);`
+
+* indexed keywords are important for searching & logging
+   * handy when you have a dApp w/ a frontend for specifying accounts
 

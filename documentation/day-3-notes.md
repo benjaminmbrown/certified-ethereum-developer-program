@@ -10,11 +10,12 @@ Instructor: Stu Peters, CTO - stu@chainsafe.io
 
 `int x`
 
-`unint 256 y = 187;` (unsigned, integer does not go negative)
+`unint 256 y = 187;` (unsigned, integer does not go negative, commonly used)
 
 `uint constant z = 512;`
 
 ### Bool
+
 `bool x;`
 
 `bool y = true;`
@@ -23,22 +24,27 @@ Instructor: Stu Peters, CTO - stu@chainsafe.io
 
 
 ### Untyped
+
 `var x;`
 
 ### Address
 
 Address is an ethereum address
+
 `address public user;`
+
 -Public declaration creates a function that exposes the value of the variable to external users of the contract.
 
 ### String
 
-A string is only accessible from the contract itself. External contracts can not access this.
+A string is only accessible from the contract itself. External contracts can not access this data type.
+
 `string lang = "Solidity"`
 
 ### Byes
 
 A byte is like a string but can be exposed publicly - more commonly used.
+
 `byte x;`;
 
 ### Array

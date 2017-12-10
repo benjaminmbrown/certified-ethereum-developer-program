@@ -114,6 +114,8 @@ Example contract that has calls and mutations
 
 `return`
 
+`delete` - removes / deletes an item
+
 no switch statement - use an if / else chain
 
 ## Global variables
@@ -166,6 +168,8 @@ We learned how to avoid re-entrancy attacks
 `this` - refers to the current instance of the contract
 
 `kill` - kills public 
+
+`payable` - we need this in the contract for a function to accept payments
 
 ## User-defined data structures
 
@@ -276,3 +280,15 @@ Events are not accessible by other contracts. They are only used to communicate 
 
 # Truffle working sample
 [Working Truffle](http://github.com/professormarek)
+
+`testrpc --port 9545` - in a side tab
+
+`truffle unbox webpack`
+
+Add web3.js to your javascripts folder
+
+`truffle compile`
+
+`truffle migrate`
+
+`npm run dev`

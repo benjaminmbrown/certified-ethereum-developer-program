@@ -266,8 +266,13 @@ if( msg.sender != owner){
 
 Events are used when you're building decentralized apps with functionality outside of smart contracts. Front end code can listen for these events.
 
-` event Transfer(address indexed _from, address indexed _to, uint256 _valie);`
+Events are not accessible by other contracts. They are only used to communicate to Front End, and other external architecture.
+
+`event Transfer(address indexed _from, address indexed _to, uint256 _valie);`
 
 * indexed keywords are important for searching & logging
    * handy when you have a dApp w/ a frontend for specifying accounts
 
+
+# Truffle working sample
+[Working Truffle](http://github.com/professormarek)

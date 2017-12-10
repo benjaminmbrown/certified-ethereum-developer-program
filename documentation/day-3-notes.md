@@ -176,8 +176,6 @@ We learned how to avoid re-entrancy attacks
 
 ### Structs
 
-Struct is an interface to define. 
-
 ```
 
 struct testStruct {
@@ -201,6 +199,27 @@ contract Structs {
         address address;
         uint num;
     }
+    
+    function returnStruct() constant returns (address, uint){
+        return A.addr, A.num;
+    }
 }
 
 ```
+* EVM can't return structs as objects
+* must get properties explicitly (see returnStruct above)
+
+Research task: Compare struct notations vs. javascript objects
+
+### Enum
+Allows you to build your contracts into a finite state machine. An object has x amount of states which it HAS to be in at any given time. 
+
+Example: Shopping cart states (empty, addedToCard, payForCart, checkout)
+
+`enum CheckoutState{empty, addedToCard, payForCart, checkout}`
+
+`if(CheckoutState.empty === true) `
+
+### Mapping
+
+`mapping (address => uint256) public balances;`

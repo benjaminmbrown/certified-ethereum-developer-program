@@ -7,6 +7,9 @@ Instructor: Stu Peters, CTO - stu@chainsafe.io
 [Data Types](#Data-Types)
 
 ## Data Types
+[Int](#Int)
+[Bool](#Bool)
+[Untyped](#Untyped)
 
 ### Int
 

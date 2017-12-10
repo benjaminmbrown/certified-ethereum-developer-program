@@ -4,6 +4,8 @@ Benjamin M. Brown T: [@benjaminmbrown](http://twitter.com/benjaminmbrown) - G: [
 ## Intro
 Instructor: Stu Peters, CTO - stu@chainsafe.io
 
+[Data Types](#Data Types)
+
 
 ## Data Types
 
@@ -152,6 +154,19 @@ To store an image - store a hash of the address stored somewhere else.
 `tx.origin` - (uint) - use this when contract factory is spinning out multiple contracts to ensure you're getting a unique tx origin as very first sender of tx.
 
 A -> B -> C
+
 you -> contract factory -> smart contract
+
 address -> msg.sender -> tx.origin
+
+NOTE: All state changes are atomic.
+We learned how to avoid re-entrancy attacks
+
+### Global Variables
+
+`now` - (uint) - same as `block.timestamp`
+
+`this` - refers to the current instance of the contract
+
+`kill` - 
 

@@ -79,7 +79,7 @@ contract Coin {
 ```
 
 ### Contract Call
- Doesn't cost any gas (free)
+ Doesn't cost any gas (free). `constant returns` signifies it as a constant returns.
 
 ```
 
@@ -90,3 +90,7 @@ function queryBalance ( address _addres) constant returns (uint256 balance){
 }
 
 ```
+
+Example contract that has calls and mutations
+
+![Simple contract](simple-contract.jpg)

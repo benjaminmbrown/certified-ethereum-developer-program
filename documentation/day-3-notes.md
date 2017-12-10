@@ -77,3 +77,16 @@ contract Coin {
 }
 
 ```
+
+### Contract Call
+ Doesn't cost any gas (free)
+
+```
+
+mapping (address => uint256) public balances;
+
+function queryBalance ( address _addres) constant returns (uint256 balance){
+    return balances[_address];
+}
+
+```

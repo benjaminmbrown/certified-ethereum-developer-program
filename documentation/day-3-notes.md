@@ -133,7 +133,7 @@ no switch statement - use an if / else chain
 
 `block.timestamp` or `now` - (uint)
 
-### Message
+### Message or msg
 
 `msg.data` -
 
@@ -142,4 +142,16 @@ no switch statement - use an if / else chain
 `msg.sender` - address of person that is making transaction to the smart contract
 
 `msg.value` - the amount of wei that was sent to the contract in the transaction
+
+To store an image - store a hash of the address stored somewhere else.
+
+### Transaction or tx
+
+`tx.gasprice` - (uint)
+
+`tx.origin` - (uint) - use this when contract factory is spinning out multiple contracts to ensure you're getting a unique tx origin as very first sender of tx.
+
+A -> B -> C
+you -> contract factory -> smart contract
+address -> msg.sender -> tx.origin
 

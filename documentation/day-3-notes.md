@@ -223,3 +223,11 @@ Example: Shopping cart states (empty, addedToCard, payForCart, checkout)
 ### Mapping
 
 `mapping (address => uint256) public balances;`
+
+## Contract Inheritance
+
+Contracts need to communicate with each other. We have a base contract functionality that can be used by other contracts by extensions
+
+* can import from other contract files
+
+`import './Escrow`;

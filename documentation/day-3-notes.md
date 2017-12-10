@@ -4,8 +4,7 @@ Benjamin M. Brown T: [@benjaminmbrown](http://twitter.com/benjaminmbrown) - G: [
 ## Intro
 Instructor: Stu Peters, CTO - stu@chainsafe.io
 
-[Data Types](#Data Types)
-
+[Data Types](#Data-Types)
 
 ## Data Types
 

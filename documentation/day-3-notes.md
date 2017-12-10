@@ -94,3 +94,52 @@ function queryBalance ( address _addres) constant returns (uint256 balance){
 Example contract that has calls and mutations
 
 ![Simple contract](simple-contract.jpg)
+
+### Cost of Gas in Solidity
+* To send 1 ether = 21,000 gas
+* Every byte on top of that is 5gas
+
+## Control Structures
+
+`if`
+
+`else`
+
+`while`
+
+`for`
+
+`break`
+
+`continue`
+
+`return`
+
+no switch statement - use an if / else chain
+
+## Global variables
+
+### Block
+
+`block.coinbase` - address
+
+`block.difficulty` - (uint)
+
+`block.gaslimit` - (uint)
+
+`block.number` - (uint)
+
+`block.blockhash` - (function(uint) returns (bytes32))
+
+`block.timestamp` or `now` - (uint)
+
+### Message
+
+`msg.data` -
+
+`msg.gas` -
+
+`msg.sender` - address of person that is making transaction to the smart contract
+
+`msg.value` - the amount of wei that was sent to the contract in the transaction
+

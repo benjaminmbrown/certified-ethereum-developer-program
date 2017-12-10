@@ -170,5 +170,37 @@ We learned how to avoid re-entrancy attacks
 
 `this` - refers to the current instance of the contract
 
-`kill` - 
+`kill` - kills public 
 
+## User-defined data structures
+
+### Structs
+
+Struct is an interface to define. 
+
+```
+
+struct testStruct {
+    address testAddr;
+    uint testUint;
+}
+
+```
+
+* The second type in a mapping can be a Struct
+
+Example:
+
+```
+
+contract Structs {
+
+    mapping ( uint => A) test;
+
+    struct A {
+        address address;
+        uint num;
+    }
+}
+
+```

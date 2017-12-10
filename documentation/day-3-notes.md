@@ -1,4 +1,5 @@
 # Day 3
+Benjamin M. Brown T: [@benjaminmbrown](http://twitter.com/benjaminmbrown) - G: [@benjaminmbrown](http://github.com/benjaminmbrown)
 
 ## Intro
 Instructor: Stu Peters, CTO - stu@chainsafe.io
@@ -59,3 +60,20 @@ Common data structure, collection. In solidity you can only keep same types of i
 Mapping is two types that are user defined (a key and value)
 
 `mapping (address => uint256) public balances;`
+
+Example:
+
+```
+pragma solidity 0.4.19;
+
+contract Coin { 
+    address owner;
+    mapping(address => uint) public balances;
+
+    function Coin(uint _supply){
+        owner = msg.sender;
+        balances[owner] += _supply;
+    }
+}
+
+```

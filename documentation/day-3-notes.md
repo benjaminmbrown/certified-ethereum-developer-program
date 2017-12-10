@@ -4,12 +4,7 @@ Benjamin M. Brown T: [@benjaminmbrown](http://twitter.com/benjaminmbrown) - G: [
 ## Intro
 Instructor: Stu Peters, CTO - stu@chainsafe.io
 
-[Data Types](#Data-Types)
-
 ## Data Types
-[Int](#Int)
-[Bool](#Bool)
-[Untyped](#Untyped)
 
 ### Int
 
@@ -231,3 +226,39 @@ Contracts need to communicate with each other. We have a base contract functiona
 * can import from other contract files
 
 `import './Escrow`;
+
+## Visibility Specifier
+
+Helps you specify the scope of access for functions and variables.
+
+#### For Variables
+
+`public`
+
+`private` - only your contract can use this
+
+#### For Functions
+
+`internal`
+
+`external`
+
+## Modifiers
+
+Another way to create reusable containers of code. 
+
+#### Error Handling in modifiers
+
+```
+
+if( msg.sender != owner){
+    throw; //drains contract of all gas
+} else {
+    _; //run your code
+}
+
+```
+
+* Throw drains all gas out of contracts
+* `_;` basically means to proceed - required to be included in your modifier
+

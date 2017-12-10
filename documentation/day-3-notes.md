@@ -79,7 +79,7 @@ contract Coin {
 ```
 
 ### Contract Call
- Doesn't cost any gas (free). `constant returns` signifies it as a constant returns.
+ Doesn't cost any gas (free). `constant returns` signifies it as a Contract Call.
 
 ```
 

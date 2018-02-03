@@ -25,3 +25,7 @@ Some may be verbatim from Solidity docs - this is primarily for personal underst
 [Pure Functions](pure-functions.md)
 
 [Fallback Functions](fallback-functions.md)
+
+[Events](events.md)
+
+[Low Level Logging](logging.md)

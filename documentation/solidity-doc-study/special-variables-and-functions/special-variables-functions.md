@@ -2,10 +2,10 @@
 
 Reserved/built in vars and funcs
 
-[Block and Transactions]("block-and-transactions.md")
+[Block and Transactions](block-and-transactions.md)
 
-[Addresses]("address-functions.md")
+[Addresses](address-functions.md)
 
-[Error Handling]("error-handling.md")
+[Error Handling](error-handling.md)
 
-[Mathematical and Cryptographic]("math-crypto-functions.md")
+[Mathematical and Cryptographic](math-crypto-functions.md)

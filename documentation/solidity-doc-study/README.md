@@ -31,3 +31,7 @@ Some may be verbatim from Solidity docs - this is primarily for personal underst
 [Low Level Logging](logging.md)
 
 [Inheritance](inheritance.md)
+
+[Abstract Contracts](abstract-contracts.md)
+
+[Interfaces](interfaces.md)

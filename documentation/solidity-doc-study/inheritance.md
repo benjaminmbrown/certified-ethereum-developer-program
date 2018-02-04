@@ -120,3 +120,55 @@ contract Base2 is mortal {
 - It will call Base2.kill()
 - The actual function that is called when user super is not known in the context of the class where it is used although its type is known.
 - Final inheritance sequence: Final, Base1, Base2, mortal, owned
+
+## Arguments for Base Constructors
+
+- Derived contracts must provide all arguments needed for base constructors
+- Can be done in two ways
+- 1. Directly in the inheritance list (Base(7)) - more convenienct if constructor argument is a constant and defines or describes the behavior of the contract 
+- 2. Modifier invoked as part of the header of the derived constructor (Base(_y * _y)). - has to be used if the constructor arguments of the base depend on those of derived.
+
+Example:
+
+```
+
+pragma solidity ^0.4.19;
+
+contract Base {
+    uint x;
+    function Base(uint _x) { x = _x; }
+}
+
+contract Derived is Base(7){
+    function Derived(uint _y) Base (_y * _y){}
+}
+
+```
+
+## Multiple Inheritance
+
+- Follows Python's C3 Linearization 
+- Desirable property of monotonicity but disallows inheritance graphs.
+- The order in which base classes are given the *is* directive is important
+
+"Linearization of inheritance graph impossible" Error:
+
+```
+pragma solidity ^0.4.19;
+
+contract X {}
+contract A is X { }
+contract C is A, X {}
+
+```
+
+- C requests X to override A (by A, X in the order)
+- A itself requests override of X, which cannot be resolved
+- RULE: specify the base classes in order from "most Base-like" to "most derived"
+
+## Inheriting Different Kinds of Members of the Same Name
+
+- ERROR: when inheritance results in a contract with a function and modifier of the same name
+- ERROR: event and modifier of same name
+- ERROR: functiona nd event of same name
+- A state variable getter can override public function

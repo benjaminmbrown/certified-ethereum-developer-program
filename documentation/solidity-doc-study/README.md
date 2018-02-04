@@ -29,3 +29,5 @@ Some may be verbatim from Solidity docs - this is primarily for personal underst
 [Events](events.md)
 
 [Low Level Logging](logging.md)
+
+[Inheritance](inheritance.md)

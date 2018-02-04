@@ -35,3 +35,5 @@ Some may be verbatim from Solidity docs - this is primarily for personal underst
 [Abstract Contracts](abstract-contracts.md)
 
 [Interfaces](interfaces.md)
+
+[Libraries](libraries.md)
